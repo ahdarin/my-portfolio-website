@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Ahda</title>
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="fontawesome/css/brands.css">
+    <link rel="stylesheet" href="fontawesome/css/solid.css">
+    <style>
+      body {
+          position: relative; 
+      }
+      .justify {
+        text-align: justify;
+      }
+      .caption{
+        background-color: rgb(0, 0, 0, 0.4);
+        border-radius: 10px;
+        
+      }
+      .nav-item:hover{
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+      } 
+
+      .btninterest{
+        width: 75%;
+        height: 130px;
+        margin-bottom: 8px;
+      }
+
+      .btnhobi{
+        width: 100%;
+        height: 85px;
+        margin-bottom: 8px;
+      }
+
+      .cardexp{
+        height: 100px;
+        overflow: hidden;
+      }
+
+      .card{
+        margin-bottom: 8px;
+      }
+
+      .confooter{
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 2px;
+      }
+
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <script src="bootstrap/bootstrap.bundle.min.js"></script> 
+    
+
+   <!-- Welcome -->
+    <div class="container-fluid bg-dark text-white p-3" id="home">
+        <h1 class="text-center">Welcome To My Portfolio</h1>
+        <div class="container text-center mt-3">
+          <p class="">Ahda Rindang Al-Amin</p>
+          <div class="btn-group btn-group-sm">
+            <a href="https://instagram.com/ahdarindang"><button class="btn btn-dark img-fluid"><i class="fa-brands fa-instagram fa-sm"></i></button></a>
+            <a href="mailto:ahdaalamin2506@gmail.com"><button class="btn btn-dark img-fluid"><i class="fa-regular fa-envelope fa-sm"></i></button></a>
+            <a href="https://www.linkedin.com/in/ahda-rindang-al-amin-2b7756287"><button class="btn btn-dark img-fluid"><i class="fa-brands fa-linkedin-in fa-sm"></i></button></a>
+            <a href="https://github.com/ahdarin"><button class="btn btn-dark img-fluid"><i class="fa-brands fa-github fa-sm"></i></button></a>
+            <a href="https://wa.me/6281275471093"><button class="btn btn-dark img-fluid"><i class="fa-brands fa-whatsapp fa-sm"></i></button></a>
+          </div>
+        </div>
+
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm sticky-top bg-dark navbar-dark">
+        <div class="container-fluid">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><i class="fa-solid fa-user"></i> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"><i class="fa-solid fa-phone"></i> Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- Home Carousel -->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/imghome1.png" alt="Me" class="d-block w-100">
+            <div class="carousel-caption">
+              <p class="caption p-2">"I need a room full of mirrors so i can be surrounded by winners."-Kanye West</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/imghome2.png" alt="Keluarga" class="d-block w-100">
+            <div class="carousel-caption">
+              <p class="caption p-2">"I'm a million miles ahead of where I'm from. But I still have another million miles to go"-Tim Bergling</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/imghome3.png" alt="IF" class="d-block w-100">
+            <div class="carousel-caption">
+              <p class="caption p-2">"Nothing can be gained without losing. Even heaven demands death"</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      
+
+      <!-- About -->
+      <div class="container-fluid p-3" id="about">
+        <h1 class="mt-3 text-center">About Me</h1>
+        <div class="row mt-3">
+          <div class="col-sm-3 p-3">
+            <img src="assets/img/ahda.jpg" alt="Profile" class="img-fluid mx-auto d-block rounded-2">
+          </div>
+          <div class="col-sm-9 p-3">
+            <h3>Hello There!</h3>
+            <p class="justify">I'm <b>Ahda Rindang Al-Amin</b>, a passionate Informatics sophomore at Universitas Andalas, Indonesia. With a strong interest in technology and design, I've been actively involved in various organizations and committees, honing my skills in multimedia, web development, and teamwork. My goal is to continuously learn, create, and contribute to impactful innovations.</p>
+            <div>Let’s connect and build something great together!</div>
+
+            <h3 class="mt-4">My Interests</h3>
+            <div class="row mt-3">
+              <div class="col-sm-3">
+                <button type="button" class="btninterest btn btn-dark p-3 mx-auto d-block" data-bs-toggle="popover" title="Web Development" data-bs-content="Designing and building websites that combine creativity and functionality, utilizing HTML, CSS, JavaScript, and frameworks."><i class="fa-solid fa-globe fa-xl"></i> <p class=" mt-1">Web Development</p></button>
+              </div>
+              <div class="col-sm-3">
+                <button type="button" class="btninterest btn btn-dark p-3 mx-auto d-block" data-bs-toggle="popover" title="Game Development" data-bs-content="Creating interactive and immersive digital experiences using tools like Unity, blending art, coding, and storytelling to bring virtual worlds to life."><i class="fa-solid fa-gamepad fa-xl"></i> <p class=" mt-1">Game Development</p></button>
+              </div>
+              <div class="col-sm-3">
+                <button type="button" class="btninterest btn btn-dark p-3 mx-auto d-block" data-bs-toggle="popover" title="Data Science" data-bs-content="Extracting insights and making data-driven decisions through analysis, visualization, and machine learning, unlocking the potential hidden in raw data."><i class="fa-solid fa-chart-line fa-xl"></i> <p class=" mt-1">Data Science</p></button>
+              </div>
+              <div class="col-sm-3">
+                <button type="button" class="btninterest btn btn-dark p-3 mx-auto d-block" data-bs-toggle="popover" title="Culinary" data-bs-content="Exploring the art of cooking and food preparation, from mastering recipes to experimenting with new flavors, techniques, and cuisines."><i class="fa-solid fa-utensils fa-xl"></i> <p class=" mt-1">Culinary</p></button>
+              </div>
+
+              
+            </div>    
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <h3>My Hobbies</h3>
+          <div class="row mt-3">
+            <div class="col-sm-4">
+              <button class="btnhobi btn btn-dark p-3 mx-auto d-block" data-bs-toggle="collapse" data-bs-target="#hobi1"><i class="fa-solid fa-terminal fa-xl"></i><p class="mt-1">Coding</p></button>
+              <div id="hobi1" class="collapse">
+                <p class="text-center">Passionate about writing clean, efficient code to build innovative solutions, from web development, to game programming and beyond.</p>
+
+                <div id="demo3" class="carousel slide" data-bs-ride="carousel">
+
+                  <!-- Carousel Indicators -->
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo3" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo3" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo3" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo3" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#demo3" data-bs-slide-to="4"></button>
+                  </div>
+                
+                  <!-- Carousel Items -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/img/hobi1.1.png" alt="hobi" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/hobi1.2.png" alt="hobi" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/hobi1.3.png" alt="hobi" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/hobi1.4.png" alt="hobi" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/hobi1.5.png" alt="hobi" class="d-block w-100">
+                    </div>
+                  </div>
+                
+                  <!-- Carousel Controls -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#demo3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#demo3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <button class="btnhobi btn btn-dark p-3 mx-auto d-block" data-bs-toggle="collapse" data-bs-target="#hobi2"><i class="fa-solid fa-bowl-food fa-xl"></i><p class="mt-1">Cooking</p></button>
+              <div id="hobi2" class="collapse">
+                <p class="text-center">Enjoys experimenting with flavors and techniques in the kitchen, creating delicious dishes from scratch while exploring diverse cuisines.</p>
+
+                <div id="demo4" class="carousel slide" data-bs-ride="carousel">
+
+                  <!-- Carousel Indicators -->
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo4" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo4" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo4" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo4" data-bs-slide-to="3"></button>
+                  </div>
+                
+                  <!-- Carousel Items -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/img/hobi2.1.jpg" alt="hobi" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/hobi2.2.jpg" alt="hobi" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/hobi2.3.jpg" alt="hobi" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/hobi2.4.jpg" alt="hobi" class="d-block w-100">
+                    </div>
+                  </div>
+                
+                  <!-- Carousel Controls -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#demo4" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#demo4" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <button class="btnhobi btn btn-dark p-3 mx-auto d-block" data-bs-toggle="collapse" data-bs-target="#hobi3"><i class="fa-solid fa-camera fa-xl"></i><p class="mt-1">Photography</p></button>
+              <div id="hobi3" class="collapse">
+                <p class="text-center">Capturing the world through a lens, focusing on details and moments that tell unique stories through light, composition, and creativity.</p>
+
+                <div id="demo5" class="carousel slide" data-bs-ride="carousel">
+
+                  <!-- Carousel Indicators -->
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo5" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo5" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo5" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo5" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#demo5" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#demo5" data-bs-slide-to="5"></button>
+                  </div>
+                
+                  <!-- Carousel Items -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/img/hobi3.1.jpg" alt="hobi" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/hobi3.2.jpg" alt="hobi" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/hobi3.3.jpg" alt="hobi" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/hobi3.4.jpg" alt="hobi" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/hobi3.5.jpg" alt="hobi" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/hobi3.6.jpg" alt="hobi" class="d-block w-100">
+                    </div>
+                  </div>
+                
+                  <!-- Carousel Controls -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#demo5" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#demo5" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>  
+
+      <!-- Education -->
+      <div class="container-fluid p-3" id="education">
+        <h1 class="mt-3 text-center">Education</h1>
+        <div id="accordion" class="mt-3">
+
+          <div class="card">
+            <div class="card-header">
+              <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                <h6><i class="fa-solid fa-caret-down fa-sm"></i> SDIT Syahiral Ilmi <span class="text-secondary">2011-2017</span></h6>
+              </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+              <div class="card-body">
+                <img src="assets/img/edu1.jpg" alt="SDIT Syahiral Ilmi" class="img-fluid rounded w-25 mx-auto d-block">
+                <p class="text-center mt-4">SDIT Syahiral Ilmi adalah sekolah dasar berbasis Islami yang fokus pada pembelajaran karakter dan akademik.</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                <h6><i class="fa-solid fa-caret-down fa-sm"></i> SMPI Al-Ishlah <span class="text-secondary">2017-2020</span></h6>
+              </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                <img src="assets/img/edu2.png" alt="SMPI Al-Ishlah" class="img-fluid rounded w-25 mx-auto d-block">
+                <p class="text-center mt-4">SMPI Al-Ishlah adalah sekolah menengah pertama dengan kurikulum modern yang mengintegrasikan ilmu pengetahuan dan nilai-nilai agama.</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                <h6><i class="fa-solid fa-caret-down fa-sm"></i> SMAN 1 Tilatang Kamang <span class="text-secondary">2020-2023</span></h6>
+              </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                <img src="assets/img/edu3.jpeg" alt="Smantika" class="img-fluid rounded w-25 mx-auto d-block">
+                <p class="text-center mt-4">SMAN 1 Tilatang Kamang adalah sekolah menengah atas unggulan dengan berbagai program akademik dan non-akademik.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+                <h6><i class="fa-solid fa-caret-down fa-sm"></i> Universitas Andalas <span class="text-secondary">2023-Now</span></h6>
+              </a>
+            </div>
+            <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                <img src="assets/img/edu4.webp" alt="unand" class="img-fluid rounded w-25 mx-auto d-block">
+                <p class="text-center mt-4">Universitas Andalas adalah salah satu universitas terbaik di Indonesia yang berlokasi di Sumatera Barat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div class="container-fluid p-3" id="experience">
+        <h1 class="mt-3 text-center">Experience</h1>
+        <h3 class="mt-5">Organizations and Committees Experiences</h3>
+
+        <div class="row mt-3">
+          <div class="col-sm-3">
+            <div class="card">
+              <img class="card-img-top img-fluid" src="assets/img/exp1.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="cardexp card-title">Volunteer at IF PEDULI</h4>
+                <p class="card-text text-secondary">December 2023</p>
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#Nothingness">
+                  Show Credential
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card">
+              <img class="card-img-top img-fluid" src="assets/img/exp2.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="cardexp card-title">INFORMATICUP Public Relations Division Staff</h4>
+                <p class="card-text text-secondary">June 2024</p>
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ModalIFCUP">
+                  Show Credential
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card">
+              <img class="card-img-top img-fluid" src="assets/img/exp3.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="cardexp card-title">Technofest 2024 Logistics Division Staff</h4>
+                <p class="card-text text-secondary">May 2024 - October 2024</p>
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#Nothingness">
+                  Show Credential
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card">
+              <img class="card-img-top img-fluid" src="assets/img/exp4.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="cardexp card-title">HMIF-UNAND Chairman</h4>
+                <p class="card-text text-secondary">June 2024 - Now</p>
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ModalHMIF">
+                  Show Credential
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Modal Credential organisasi -->
+        <div id="modal-organisasi">
+          <!--Modal Nothing-->
+          <div class="modal fade" id="Nothingness">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Oops...</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <img src="assets/img/mechanic-cat.jpg" alt="Oops" class="mx-auto d-block img-fluid w-50 rounded-4">
+                  <div class="alert alert-danger mt-2"><div class="spinner-grow spinner-grow-sm"></div><strong> Oops!</strong> Looks like nothing's here (yet).</div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!--Modal HMIF-->
+          <div class="modal fade" id="ModalHMIF">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">HMIF UNAND Chairman Credential</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <a href="https://fti.unand.ac.id/en/2019-04-02-04-16-19/surat-keputusan-dekan.html?download=144:sk-pengurus-hima-if-periode-2024-2025&start=60 ">Click here to show credential.</a>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!--Modal IF cup-->
+          <div class="modal fade" id="ModalIFCUP">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">INFORMATICUP Public Relations Division Staff</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <img src="assets/img/sertifcup.jpg" alt="Sertifcup" class="mx-auto d-block img-fluid rounded-1">
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <h3 class="mt-5">Projects</h3>
+        <div class="row mt-3">
+          <div class="col-sm-3">
+            <div class="card">
+              <img class="card-img-top img-fluid" src="assets/img/proj1.png" alt="Card image">
+              <div class="card-body">
+                <h6 class="card-title">Basic Algorithm </h6> 
+                <i class="fa-brands fa-java fa-lg float-end" data-bs-toggle="tooltip" title="Java"></i>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/ahdarin/algorithm-programming"><button type="button" class="btn btn-dark"> See More </button></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card">
+              <img class="card-img-top img-fluid" src="assets/img/proj2.png" alt="Card image">
+              <div class="card-body">
+                <h6 class="card-title">System Number Converter GUI </h6> 
+                <i class="fa-brands fa-java fa-lg float-end" data-bs-toggle="tooltip" title="Java"></i>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/ahdarin/JavaSystemNumberConverter"><button type="button" class="btn btn-dark"> See More </button></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card">
+              <img class="card-img-top img-fluid" src="assets/img/proj1.png" alt="Card image">
+              <div class="card-body">
+                <h6 class="card-title">Basic Data Structure</h6> 
+                <i class="fa-brands fa-java fa-lg float-end" data-bs-toggle="tooltip" title="Java"></i>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/ahdarin/data-structure"><button type="button" class="btn btn-dark"> See More </button></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card">
+              <img class="card-img-top img-fluid" src="assets/img/proj4.png" alt="Card image">
+              <div class="card-body">
+                <h6 class="card-title">Postfix Calculator</h6> 
+                <i class="fa-brands fa-java fa-lg float-end" data-bs-toggle="tooltip" title="Java"></i>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/ahdarin/data-structure/tree/UAP"><button type="button" class="btn btn-dark"> See More </button></a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-sm-3">
+            <div class="card">
+              <img class="card-img-top img-fluid" src="assets/img/proj5.png" alt="Card image">
+              <div class="card-body">
+                <h6 class="card-title">Flappy Bird</h6> 
+                <i class="fa-brands fa-unity fa-lg float-end" data-bs-toggle="tooltip" title="Unity"></i>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-dark disabled"> See More </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card">
+              <img class="card-img-top img-fluid" src="assets/img/proj6.png" alt="Card image">
+              <div class="card-body">
+                <h6 class="card-title">Web Design With Service Worker </h6> 
+                
+                <i class="fa-brands fa-js fa-lg float-end ms-1" data-bs-toggle="tooltip" title="JavaScript"></i>
+                <i class="fa-brands fa-css3-alt fa-lg float-end ms-1" data-bs-toggle="tooltip" title="CSS3"></i>
+                <i class="fa-brands fa-html5 fa-lg float-end ms-1" data-bs-toggle="tooltip" title="HTML5"></i>
+                
+              </div>
+              <div class="card-footer">
+                <a href="https://stalwart-speculoos-498032.netlify.app/"><button type="button" class="btn btn-dark"> See More </button></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card">
+              <img class="card-img-top img-fluid" src="assets/img/proj5.png" alt="Card image">
+              <div class="card-body">
+                <h6 class="card-title">Data Analysis and Modeling</h6> 
+                <i class="fa-brands fa-python fa-lg float-end" data-bs-toggle="tooltip" title="Python"></i>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/ahdarin/data-science-sandbox"><button type="button" class="btn btn-dark"> See More </button></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        
+
+      </div>
+
+      <!-- Contact -->
+      <div class="container-fluid p-3" id="contact">
+        <h1 class="mt-3 text-center">Contact</h1>
+        <div class="row mt-3">
+
+          <!-- kontak -->
+          <div class="col-sm-4" style="margin-bottom: 8px;">
+            <div class="container-fluid mx-auto d-block rounded-2 bg-dark p-3">
+              <h4 class="text-white">Find Me</h4>
+              <div class="btn-group-vertical">
+                <a href="https://instagram.com/ahdarindang"><button class="btn btn-dark mb-2 img-fluid"><i class="fa-brands fa-instagram fa-lg"></i> @ahdarindang</button></a>
+                <a href="mailto:ahdaalamin2506@gmail.com"><button class="btn btn-dark mb-2 img-fluid"><i class="fa-regular fa-envelope fa-lg"></i> ahdaalamin2506@gmail.com</button></a>
+                <a href="https://www.linkedin.com/in/ahda-rindang-al-amin-2b7756287"><button class="btn btn-dark mb-2 img-fluid"><i class="fa-brands fa-linkedin-in fa-lg"></i>  Ahda Rindang Al-Amin</button></a>
+                <a href="https://github.com/ahdarin"><button class="btn btn-dark mb-2 img-fluid"><i class="fa-brands fa-github fa-lg"></i>  ahdarin</button></a>
+                <a href="https://wa.me/6281275471093"><button class="btn btn-dark mb-2 img-fluid"><i class="fa-brands fa-whatsapp fa-lg"></i>  WhatsApp</button></a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- forms -->
+          <div class="col-sm-8">
+            <div class="container-fluid mx-auto d-block rounded-2 bg-dark p-3 text-white">
+              <h4 class="">Send Me A Message</h4>
+              <div class="form">
+                <form id="myForm" onsubmit="showAlert(); return false;">
+                  <label for="nama" class="form-label mt-2">Name/Alias:</label>
+                   <input type="text" id="nama" name="nama" class="form-control" placeholder="Enter your name" required>
+      
+                  <label for="email" class="form-label mt-2">Email:</label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+      
+                  <label for="pesan" class="form-label mt-2">Message:</label>
+                  <textarea class="form-control" rows="5" id="pesan" name="text" placeholder="Enter messages..."></textarea>
+
+                  <div class="radio-group mt-2">
+                    <label>Would you like to receive a reply?</label>
+                    <div class="form-check">
+                      <input type="radio" class="form-check-input" id="radio1" name="balasan" value="ya" required>
+                      <label class="form-check-label" for="radio1">Yes</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="radio" class="form-check-input" id="radio2" name="balasan" value="tidak" checked required>
+                      <label class="form-check-label" for="radio2">No</label>
+                    </div>
+                  </div>
+
+                  <div class="submit mt-2">
+                    <button type="submit" class="btn btn-light">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="container-fluid confooter">
+        <h6 class="text-center">©2024 Ahda Rindang Al-Amin 2311531003</h6>
+        <p class="text-center">Mostly made with <i class="fa-brands fa-bootstrap fa-sm"></i><strong> Bootstrap</strong> framework.</p>
+      </footer>
+
+        <!-- popover script -->
+        <script>
+          var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+          var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+          })
+        </script>
+
+        <script>
+          function showAlert() {
+              alert("Form berhasil dikirim");
+          }
+        </script>
+
+        <!-- tooltip script -->
+        <script>
+          var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+          var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+          })
+        </script>
+
+</body>
+</html>
